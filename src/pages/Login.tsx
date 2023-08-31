@@ -46,18 +46,11 @@ const Login = () => {
     navigate("/");
   };
 
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-2">
-      <div
-        className="md:h-[100vh] h-[50vh] bg-[#4623E9] md:rounded-none rounded-b-3xl flex justify-center items-center"
-        // data-aos="slide-right"
-      >
+  return <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="md:h-[100vh] h-[50vh] bg-[#4623E9] md:rounded-none rounded-b-3xl flex justify-center items-center animate_left">
         <LoginLogo />
       </div>
-      <div
-        className="md:h-[100vh] h-[50vh] flex items-center justify-center"
-        // data-aos="slide-left"
-      >
+      <div className="md:h-[100vh] h-[50vh] flex items-center justify-center animate_right">
         <FormContainer>
           <FormTitle>Tizimga kirish</FormTitle>
           <FormSection>
@@ -74,8 +67,7 @@ const Login = () => {
           </Link>
         </FormContainer>
       </div>
-    </div>
-  );
+    </div>;
 };
 
 export default Login;

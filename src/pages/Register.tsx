@@ -47,16 +47,10 @@ const Register = () => {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
-      <div
-        className="md:h-[100vh] md:flex hidden bg-[#4623E9] md:rounded-none rounded-b-3xl justify-center items-center"
-        // data-aos="slide-right"
-      >
+      <div className="animate_left md:h-[100vh] md:flex hidden bg-[#4623E9] md:rounded-none rounded-b-3xl justify-center items-center">
         <LoginLogo />
       </div>
-      <div
-        className="h-[100vh] flex items-center justify-center"
-        // data-aos="slide-left"
-      >
+      <div className="h-[100vh] flex items-center justify-center animate_right">
         <div className="md:w-[60%] w-[90%]">
           <FormTitle>Ro'yhatdan o'tish</FormTitle>
           <FormSection>
