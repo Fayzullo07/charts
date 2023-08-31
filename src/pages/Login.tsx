@@ -6,7 +6,6 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
-  const FormContainer = styled.div`width: 60%;`;
 
   const FormTitle = styled.h2`
     color: #353740;
@@ -46,12 +45,13 @@ const Login = () => {
     navigate("/");
   };
 
-  return <div className="grid grid-cols-1 md:grid-cols-2">
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 fixed top-0 left-0 right-0 bottom-0">
       <div className="md:h-[100vh] h-[50vh] bg-[#4623E9] md:rounded-none rounded-b-3xl flex justify-center items-center animate_left">
         <LoginLogo />
       </div>
       <div className="md:h-[100vh] h-[50vh] flex items-center justify-center animate_right">
-        <FormContainer>
+        <div className="md:w-[60%] w-[90%]">
           <FormTitle>Tizimga kirish</FormTitle>
           <FormSection>
             <Typography>Login</Typography>
@@ -65,9 +65,10 @@ const Login = () => {
           <Link to={"/register"} className=" underline  text-blue-500">
             Register
           </Link>
-        </FormContainer>
+        </div>
       </div>
-    </div>;
+    </div>
+  );
 };
 
 export default Login;

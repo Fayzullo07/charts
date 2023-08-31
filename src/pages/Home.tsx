@@ -1,11 +1,19 @@
-import { Link } from "react-router-dom";
+import PageContainer from "../layout/PageContainer";
 
 const Home = () => {
   return (
-    <div>
-      <Link to={"/register"}>Register</Link>
-      <Link to={"/login"}>Login</Link>
-    </div>
+    <PageContainer>
+      <div className=" grid grid-cols-1 md:grid-cols-4">
+        <div className=" md:col-span-3 rounded-lg">
+          <div className=" bg-white p-6 py-40 m-2 rounded-lg">1</div>
+          <div className=" bg-white p-6 py-24 m-2 rounded-lg">2</div>
+        </div>
+        <div className=" md:col-span-1 rounded-lg">
+          <div className=" bg-white p-6 py-36 m-2 rounded-lg">1</div>
+          <div className=" bg-white p-6 py-20 m-2 rounded-lg">2</div>
+        </div>
+      </div>
+    </PageContainer>
   );
 };
 

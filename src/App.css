@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    overflow-x: hidden;
+}
 
 .animate_right {
     position: relative;
@@ -49,7 +52,7 @@
 
 @keyframes left_a {
     0% {
-        left: -100px;
+        left: -1000px;
         opacity: 0;
 
     }
@@ -62,7 +65,7 @@
 
 @keyframes right_a {
     0% {
-        right: -100px;
+        right: -1000px;
         opacity: 0;
 
     }
