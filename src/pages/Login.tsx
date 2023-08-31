@@ -50,13 +50,13 @@ const Login = () => {
     <div className="grid grid-cols-1 md:grid-cols-2">
       <div
         className="md:h-[100vh] h-[50vh] bg-[#4623E9] md:rounded-none rounded-b-3xl flex justify-center items-center"
-        data-aos="slide-right"
+        // data-aos="slide-right"
       >
         <LoginLogo />
       </div>
       <div
         className="md:h-[100vh] h-[50vh] flex items-center justify-center"
-        data-aos="slide-left"
+        // data-aos="slide-left"
       >
         <FormContainer>
           <FormTitle>Tizimga kirish</FormTitle>

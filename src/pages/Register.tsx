@@ -49,13 +49,13 @@ const Register = () => {
     <div className="grid grid-cols-1 md:grid-cols-2">
       <div
         className="md:h-[100vh] md:flex hidden bg-[#4623E9] md:rounded-none rounded-b-3xl justify-center items-center"
-        data-aos="slide-right"
+        // data-aos="slide-right"
       >
         <LoginLogo />
       </div>
       <div
         className="h-[100vh] flex items-center justify-center"
-        data-aos="slide-left"
+        // data-aos="slide-left"
       >
         <div className="md:w-[60%] w-[90%]">
           <FormTitle>Ro'yhatdan o'tish</FormTitle>
